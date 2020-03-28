@@ -7,27 +7,85 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #96d1c7;
+  background-color: #1f2833;
   scroll-behavior: smooth;
   margin: 0 auto;
 }
-
+/*
+#0b0c10
+#66fcf1
+#1f2833
+#c5c6c7
+*/
 a {
   text-decoration: none;
 }
 
-header, header > a {
-  text-align: center;
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
   background-color: #fff;
-  color: #5b5656;
-  padding: 10px 0 10px 0;
-  margin: 0;
+  padding: 30px 0 30px 0;
+  border-bottom: 5px solid #1f2833;
 }
 
-section {
+header > a {
+  position: relative;
+  color: #1f2833;
+  font-weight: 800;
+  font-size: 40px;
+  padding: 0 5px 0 5px;
+}
+
+#login-header {
+  position: relative;
+  padding: 5px 0 5px 0;
+}
+
+/*                             */
+/*  Login Signup Menu Buttons  */
+/*                             */
+
+.log-reg-div {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+.login-link {
+
+}
+
+.signin-link {
+
+}
+
+.loginreg {
+  position: relative;
+  background: #66fcf1;
+  margin: 5px;
+  padding: 10px;
+  font-weight: 600;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border: 1px solid #1f2833;
+  transition: 0.4s;
+}
+
+.loginreg:hover {
+  background: #05e1d2;
+  padding-bottom: 20px;
+  transition: 0.4s;
+  color: #fff;
+}
+
+#panel-chamber {
   width: 100%;
   min-height: 500px;
-  margin: 20px 0px 20px 0px;
+  margin: 0 0px 20px 0px;
   background-color: #fff;
   top: 0px;
   left: 0px;
@@ -40,8 +98,10 @@ section {
 #info-panel {
   float: left;
   margin: 20px;
-  border: 2px solid #000;
+  border: 2px solid #0b0c10;
   border-radius: 20px;
+  background: #1f2833;
+  color: #66fcf1;
 }
 
 /*              */
@@ -50,14 +110,17 @@ section {
 
 #panel-name {
   text-align: center;
+  text-shadow: 0px 0px 5px #9bfdf6;
 }
+
 
 /*              */
 /*  INFO PANEL  */
 /*    Content   */
 
 #panel-content {
-  background-color: #bbe1fa;
+  background-color: #ededed;
+  color: #0b0c10;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   width: 600px;
@@ -114,6 +177,13 @@ section {
 /*  INFO PANEL  */
 /*    OPEN      */
 
+/*
+#0b0c10
+#66fcf1
+#1f2833
+#c5c6c7
+*/
+
 #panel-open{
   font-family: 'Black Ops One', sans-serif;
   text-align: center;
@@ -121,20 +191,21 @@ section {
 }
 
 #panel-open > a {
-  color: #5b5656;
+  color: #fff;
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 3px;
-  transition: 0.8s;
+  transition: 0.6s;
   padding: 10px 30px 11.5px 30px;
 }
 
 #panel-open > a:hover {
-  color: #111;
+  color: #66fcf1;
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 20px;
-  transition: 0.5s;
+  transition: 0.3s;
+  text-shadow: 0px 0px 20px #9bfdf6;
 }
 
 #add-button{
@@ -158,4 +229,68 @@ section {
   height: 90px;
   width: 90px;
   font-size: 25px;
+}
+
+
+/*              */
+/*  Login HTML  *********************************************/
+/*              */
+/*
+#0b0c10
+#66fcf1
+#1f2833
+#c5c6c7
+*/
+
+#login-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 40%;
+  padding: 50px 0 50px 0;
+  border-radius: 30px;
+  margin-top: 10vh;
+  left: 30%;
+}
+
+.user-info {
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+  border: 3px solid #c5c6c7;
+}
+
+.user-info > img {
+  position: relative;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  left: 25%;
+}
+
+.user-name {
+  margin: 40px;
+
+}
+
+.user-password {
+  margin: 40px;
+
+}
+
+.login-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.loginfields > input {
+  border: 1px solid transparent;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 15px;
 }
